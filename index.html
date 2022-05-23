@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">WM_TEC</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a  href="#">Documentation</a></li>
+        </ul>
+        <div class="span">
+            <span class="first"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+        </div>
+        
+    </nav>
+    <div class="header header-content">
+        <h1>Tec is an important role in human cultures
+       <br/>WE CAN AID TO DEVELOP YOURS IN TEC</h1>
+       <a href="#" class="link">
+        Register Now
+  </a><br/><br/>
+       <div class="line"></div>
+     
+    </div>
+
+  <script>
+      const button = document.querySelector(".span");
+      const navlinks = document.querySelector(".nav-links");
+
+      button.addEventListener('click', () => {
+        navlinks.classList.toggle('.mobile-menu')
+      })
+  </script>
+</body>
+</html>
